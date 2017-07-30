@@ -1,0 +1,23 @@
+.button:hover{
+	-fx-background-color: lavender;
+}
+
+.button:text{
+	-fx-font-weight: bold;
+}
+
+.jfx-list-cell {
+	-fx-background-insets : 0.0;
+}
+
+.jfx-list-cell:selected {
+	-fx-background-color: lavender;
+}
+
+.jfx-list-cell:hover{
+	-fx-background-color: lavender;
+}
+
+.jfx-list-view{
+	-fx-background-insets: 0.0;
+}

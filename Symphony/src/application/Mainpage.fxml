@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="503.0" prefWidth="501.0" style="-fx-background-color: #acd3ee;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainpageController">
+   <children>
+      <AnchorPane fx:id="viewerpane" layoutX="-1.0" layoutY="50.0" prefHeight="371.0" prefWidth="501.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="musicicon" fitHeight="52.0" fitWidth="61.0" layoutX="14.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="songname" layoutX="86.0" layoutY="429.0" prefHeight="17.0" prefWidth="285.0" text="" />
+      <Label fx:id="songduration" layoutX="105.0" layoutY="475.0" prefHeight="17.0" prefWidth="80.0" text="" />
+      <MediaView fx:id="media" fitHeight="2.0" fitWidth="2.0" layoutX="13.0" layoutY="438.0" />
+      <JFXButton fx:id="cycler" buttonType="RAISED" layoutX="396.0" layoutY="427.0" onAction="#repeatListener" prefHeight="25.0" prefWidth="71.0" text="no repeat" />
+      <JFXButton fx:id="play" buttonType="RAISED" layoutX="412.0" layoutY="452.0" prefHeight="32.0" prefWidth="31.0" ripplerFill="#d3e6f5" style="-fx-background-radius: 20;" text="||">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="seekright" buttonType="RAISED" layoutX="445.0" layoutY="457.0" prefHeight="25.0" prefWidth="31.0" style="-fx-background-radius: 20;" text="&gt;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="seekleft" buttonType="RAISED" cache="true" layoutX="376.0" layoutY="456.0" prefHeight="25.0" prefWidth="31.0" ripplerFill="#d3e6f5" style="-fx-background-radius: 20;" text="&lt;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Slider fx:id="durationslider" cache="true" layoutX="81.0" layoutY="453.0" pickOnBounds="false" prefHeight="14.0" prefWidth="285.0" />
+      <Slider fx:id="volumeslider" layoutX="481.0" layoutY="429.0" orientation="VERTICAL" prefHeight="69.0" prefWidth="14.0" />
+      <JFXDrawer fx:id="menudrawer" layoutY="50.0" prefHeight="371.0" prefWidth="120.0" />
+      <JFXHamburger fx:id="menu" layoutX="70.0" layoutY="14.0" prefHeight="32.0" prefWidth="42.0" />
+      <Label fx:id="namelabel" alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="14.0" prefHeight="32.0" prefWidth="230.0" text="PLAYLISTS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
